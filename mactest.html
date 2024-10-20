@@ -18,7 +18,7 @@
         /* Убираем стандартную границу */
         border: 0;
         /* Скругляем углы кнопки */
-        border-radius: 100vw;
+        border-radius: 30vw;
         /* Устанавливаем относительное позиционирование для использования псевдоэлементов */
         position: relative;
         /* Размер шрифта */
@@ -51,7 +51,7 @@ background-image:
         /* Основной линейный градиент кнопки, переходящий от основного цвета к светлому */
         linear-gradient(var(--primary), var(--light));
   }
-  button::before {
+  button:hover {
             /* Создаем пустой псевдоэлемент */
   content: "";
               /* Позиционирование относительно родительского элемента */
@@ -67,7 +67,7 @@ background-image:
             /* Скругляем углы */
             border-radius: 100vw;
   }
-  button:hover {
+  button::before {
             background-image: 
               /* Светлый градиент, создающий эффект блика сверху */
               linear-gradient(hsl(0 0% 100% / 0.85), transparent 10px),
@@ -90,7 +90,6 @@ background-image:
   }
 </style>
 </head>
-
 <body>
  <button>Читать «Код»</button>
 </body>
