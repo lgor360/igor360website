@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Аквакнопка</title>
+<style>
+  :root { 
+    /* Основной цвет кнопки */
+    --primary: hsl(213, 82%, 87%);
+    /* Светлый цвет для градиента */
+    --light: hsl(181, 95%, 92%); 
+    /* Цвет кнопки при наведении */ 
+    --primary-hover: hsl(213, 98%, 53%); 
+  }
+  button { 
+        /* Убираем стандартную границу */
+        border: 0;
+        /* Скругляем углы кнопки */
+        border-radius: 100vw;
+        /* Устанавливаем относительное позиционирование для использования псевдоэлементов */
+        position: relative;
+        /* Размер шрифта */
+        font-size: 20px;
+        /* Толщина шрифта */
+        font-weight: 500;
+        /* Изменяем курсор на указатель при наведении на кнопку */
+        cursor: pointer;
+        /* Тень */
+        box-shadow: 1px 2px 5px hsl(0, 0%, 0%, 0.25);
+        /* Внутренние отступы */
+         padding: 0.5em 3em;
+background-image: 
+        /* Светлый линейный градиент, создающий эффект блика сверху */
+        linear-gradient(hsl(0 0% 100% / 0.85), transparent 10px),
+        /* Второй линейный светлый градиент для дополнительного блика */
+        linear-gradient(hsl(0 0% 100% / 0.25) 10px, transparent 10px),
+        /* Радиальный градиент для создания мелких бликов */
+        radial-gradient(
+          circle at 10px 5px,
+          hsl(0 0% 100% / 0.25) 5px,
+          transparent 5px
+        ),
+        /* Ещё один радиальный градиент для мелких бликов */
+        radial-gradient(
+          circle at 0px 5px,
+          hsl(0 0% 100% / 0.25) 5px,
+           transparent 5px
+        ),
+        /* Основной линейный градиент кнопки, переходящий от основного цвета к светлому */
+        linear-gradient(var(--primary), var(--light));
+  }
+  button::before {
+            /* Создаем пустой псевдоэлемент */
+  content: "";
+              /* Позиционирование относительно родительского элемента */
+              position: absolute;
+            /* Помещаем псевдоэлемент за кнопкой */
+            z-index: -1;
+            /* Смещаем внутрь на 1px с каждой стороны */
+            inset: -1px;
+            /* Центрируем по горизонтали */
+            margin-inline: auto;
+            /* Линейный градиент для фона */
+            background: linear-gradient(hsl(240, 74%, 30%), hsl(0, 0%, 38%));
+            /* Скругляем углы */
+            border-radius: 100vw;
+  }
+  button:hover {
+            background-image: 
+              /* Светлый градиент, создающий эффект блика сверху */
+              linear-gradient(hsl(0 0% 100% / 0.85), transparent 10px),
+              /* Второй светлый градиент для дополнительного блика */
+              linear-gradient(hsl(0 0% 100% / 0.25) 10px, transparent 10px),
+              /* Радиальный градиент для мелких бликов */
+              radial-gradient(
+                circle at 10px 5px,
+                hsl(0 0% 100% / 0.25) 5px,
+                transparent 5px
+            ), 
+            /* Ещё один радиальный градиент для мелких бликов */
+            radial-gradient(
+                circle at 0px 5px,
+                hsl(0 0% 100% / 0.25) 5px,
+                transparent 5px
+              ),
+              /* Основной градиент кнопки, переходящий от цвета при наведении к светлому */
+              linear-gradient(var(--primary-hover), var(--light));
+  }
+</style>
+</head>
+
+<body>
+ <button>Читать «Код»</button>
+</body>
+</html>
