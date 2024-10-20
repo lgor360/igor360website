@@ -1,0 +1,5 @@
+```apache 
+RewriteEngine On 
+RewriteBase / 
+RewriteRule ^home/?$ igor360website/home.html [NC,L] 
+``` 
