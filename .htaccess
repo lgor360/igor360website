@@ -1,3 +1,1 @@
-RewriteEngine On 
-RewriteBase / 
-RewriteRule ^home/?$ igor360website/home.html [NC,L] 
+ErrorDocument 404 https://lgor360.github.io/igor360website/home.html
