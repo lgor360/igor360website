@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>сайт оцелота :3</title>
     <linkrel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
     <style>
         body {
             background-image: url(/igor360website/back5.png);
@@ -37,6 +38,14 @@
             text-decoration: none;
             font-size: 20px;
         }
+        .window {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            pointer-events: none;
+        }
         .void {
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -65,6 +74,17 @@
        <a class="now" href="https://lgor360.github.io/igor360website/home.html">сайт оцелота :3</a>
     </div>
 
-    <input type="checkbox" value="man" checked name="gender"/>
+    <img src="/igor360website/void.png" class="void" draggable="false">
+    <div class="window active" style="max-width: 650px">
+        <div class="title-bar">
+            <div class="title-bar-text">окно какое-то</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"=""></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <img src="/igor360website/window.png" draggable="false">>
+    </div>
 </body>
 </html>
