@@ -1,47 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <title>пейнтик</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
     <style>
         body, html {
-color: #000000;
-}
-/* Переопределяем цвет текста для кнопок и менюшек */
-select {
-    font-family: "trebuchet ms";
-    border-radius: 4px; /* Скругление углов */
-}
-button {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-  background: linear-gradient(to bottom, #F7FFEF 0%, #C8CEC2 100%); /* Градиент для кнопки */
-  border: 1px solid #000; /* Цвет контура кнопки */
-  padding: 1.2px 7px ; /* Отступы внутри кнопки */
-  color: inherit; /* Цвет шрифта кнопки */
-  border-radius: 4px; /* Скругление углов кнопки */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для кнопки */
-  transition: all 0.3s ease; /* Плавный эффект при наведении */
-}
-  input { /* Применение шрифта Trebuchet MS ко всему тексту, включая поля ввода и кнопки */
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    border-radius: 4px; /* Скругление углов */
-    border: 1px solid #000; /* Цвет контура */
-  }
-#tool-indicator {
-font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #FFFFFF;
-}
-label {
-font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #FFFFFF;
-}
-#widthInput {
-width: 60px;
-}
-#heightInput {
-width: 60px;
-}
+            color: #000000;
+        }
+        #tool-indicator {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            color: #FFFFFF;
+        }
+        #widthInput {
+            width: 60px;
+        }
+        #heightInput {
+            width: 60px;
+        }
         #canvas {
             border: 1px solid #000;
         }
@@ -61,7 +37,6 @@ width: 60px;
         #loading-text {
             font-size: 19px;
             color: initial;
-    font-family: "trebuchet ms";
         }
         #loading-progress {
             border-radius: 3.5px; /* Скругление углов */
@@ -80,14 +55,12 @@ width: 60px;
         #start-button {
             position: absolute;
             bottom: 30px;
-            left: 30px; /* Исправлено: Добавлено 'px' */
-            font-size: 16px;
+            left: 30px;
             cursor: pointer;
             z-index: 11; /* Убедитесь, что кнопка начать находится выше loading window */
         }
     </style>
 </head>
-
 <body>
 <div id="tool-indicator">Выбран инструмент: кисть</div>
     <div id="loading-window">
