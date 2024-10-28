@@ -75,24 +75,18 @@
     <img src="/igor360website/void.png" class="void" draggable="false">
     <img id="baton" src="/igor360website/void.png" style="width: 165px; height: 165px;" alt="не прогруженный батон">
 <script>
-    let br;
-    let NSRC;
+    const images = ['/igor360website/bread1.png', '/igor360website/bread2.png'];
+    
+    function getRandomImage() {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        return images[randomIndex];
+    }
     
     function baton() {
-        if (br == "undefined") {
-            let img = document.getElementById("baton");
-            img.src = '/igor360website/bread1.png';
-            img.alt = 'прогруженный батон';
-            br = 1
-            console.log("батон прогружен");
-        } else if (br <= 10) {
-            NSRC = '/igor360website/bread' += br
-            img.src = NSRC += ".png"
-            br = br += 1
-        } else {
-            br = 'undefined'
-            baton()
-        }
+        let img = document.getElementById("baton");
+        img.src = getRandomImage();
+        img.alt = 'прогруженный батон';
+        console.log("батон прогружен");
     }
 </script>
 </body>
