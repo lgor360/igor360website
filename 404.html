@@ -73,12 +73,13 @@
     <img src="/igor360website/void.png" class="void" draggable="false">
     <button onclick="baton()">прогрузить батон</button>
     <img src="/igor360website/void.png" class="void" draggable="false">
-    <img id="baton" src="/igor360website/void.png" style="width: 165px; height: 165px;">
+    <img id="baton" src="/igor360website/void.png" style="width: 165px; height: 165px;" alt="не прогруженный батон">
 <script>
     function baton() {
         let img = document.getElementById("baton");
         img.src = '/igor360website/bread.png';
-        console.log("батон прогружен")
+        img.alt = 'прогруженный батон';
+        console.log("батон прогружен");
     }
 </script>
 </body>
