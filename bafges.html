@@ -47,18 +47,26 @@
     <hr class="void">
     <input placeholder="цвет справа (hex или название цвета)" id="rc">
     <hr class="void">
-    <font id="ot">оютпут</font>
     <button onclick="hi()">криэйт</button> <!-- Added parentheses to call the function -->
+    <hr class="void">
+    <font id="ot">оютпут</font>
+    <hr class="void">
+    <img src="https://img.shields.io/badges/your_text-here-red" alt="бэдгэ" id="view">
     <script>
         function hi() {
             let url = "https://img.shields.io/badges/";
+            let view = document.getElementById("view");
             let lt = document.getElementById("lt").value;
             let rt = document.getElementById("rt").value;
             let rc = document.getElementById("rc").value;
             let ot = document.getElementById("ot");
             let out = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
+            if out == "https://img.shields.io/badges/--" {
+                out = "https://img.shields.io/badges/your-text-blue"
+            }
             ot.innerText = out; // Changed from ot.value to ot.innerText
             console.log(out);
+            view.src = out
         }
     </script>
 </body>
