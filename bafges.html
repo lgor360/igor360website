@@ -47,7 +47,7 @@
     <hr class="void">
     <input placeholder="цвет справа (hex или название цвета)" id="rc">
     <hr class="void">
-    <button onclick="hi()">криэйт</button> <!-- Added parentheses to call the function -->
+    <button onclick="hi()">криэйт</button>
     <hr class="void">
     <font id="ot">оютпут</font>
     <hr class="void">
@@ -61,10 +61,10 @@
             let rc = document.getElementById("rc").value;
             let ot = document.getElementById("ot");
             let out = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
-            view.src = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
-            if out == "https://img.shields.io/badge/--" {
+            view.src = out; // Update the image source
+            if (lt === "" && rt === "") {
                 out = "https://img.shields.io/badge/your-text-blue";
-                view.src = "https://img.shields.io/badge/your-text-blue";
+                view.src = out;
             }
             ot.innerText = out; // Changed from ot.value to ot.innerText
             console.log(out);
