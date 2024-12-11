@@ -45,6 +45,7 @@
     <hr class="void">
     <input placeholder="цвет справа (hex или название цвета)" id="rc">
     <hr class="void">
+    <font id="ot">оютпут</font>
     <button onclick=hi>криэйт</button>
 <script>
     function hi() {
@@ -52,6 +53,9 @@
         let lt = document.getElementById("lt").value
         let rt = document.getElementById("rt").value
         let rc = document.getElementById("rc").value
+        let ot = document.getElementById("ot")
+        let out = url + lt + "-" + rt + "-" + rc
+        ot.value = out
     }
 </script>
 </body>
