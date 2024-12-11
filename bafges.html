@@ -39,12 +39,17 @@
 <body>
     <font>создай бейджик :3</font>
     <hr class="void">
-    <input placeholder="текст слева">
+    <input placeholder="текст слева" id="lt">
     <hr class="void">
-    <input placeholder="текст справа">
+    <input placeholder="текст справа" id="rt">
     <hr class="void">
-    <input placeholder="цвет справа (hex или название цвета)">
+    <input placeholder="цвет справа (hex или название цвета)" id="rc">
     <hr class="void">
-    <button>криэйт</button>
+    <button onclick=hi>криэйт</button>
+<script>
+    function hi():
+        let url = "https://img.shields.io/badges/"
+        let lt = document.getElementById("lt").value
+</script>
 </body>
 </html>
