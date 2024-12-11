@@ -19,13 +19,15 @@
     <meta name="twitter:description" content="урааа бэдгэс">
     <meta name="twitter:image" content="https://lgor360.github.io/igor360website/testoto.png">
     <title>сайт оцелота :3</title>
-    <linkrel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <style>
         body {
             background: #EEECDD;
             font-family: "trebuchet ms";
             text-align: center;
             display: flex;
+            flex-direction: column; /* Added to stack elements vertically */
+            align-items: center; /* Center align items */
             font-size: 28px;
             color: #000000;
         }
@@ -46,17 +48,18 @@
     <input placeholder="цвет справа (hex или название цвета)" id="rc">
     <hr class="void">
     <font id="ot">оютпут</font>
-    <button onclick=hi>криэйт</button>
-<script>
-    function hi() {
-        let url = "https://img.shields.io/badges/"
-        let lt = document.getElementById("lt").value
-        let rt = document.getElementById("rt").value
-        let rc = document.getElementById("rc").value
-        let ot = document.getElementById("ot")
-        let out = url + lt + "-" + rt + "-" + rc
-        ot.innerText = out
-    }
-</script>
+    <button onclick="hi()">криэйт</button> <!-- Added parentheses to call the function -->
+    <script>
+        function hi() {
+            let url = "https://img.shields.io/badges/";
+            let lt = document.getElementById("lt").value;
+            let rt = document.getElementById("rt").value;
+            let rc = document.getElementById("rc").value;
+            let ot = document.getElementById("ot");
+            let out = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
+            ot.innerText = out; // Changed from ot.value to ot.innerText
+            console.log(out);
+        }
+    </script>
 </body>
 </html>
