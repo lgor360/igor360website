@@ -62,8 +62,17 @@
             let ot = document.getElementById("ot");
             let out = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
             view.src = out; // Update the image source
-            if (lt === "" && rt === "") {
-                out = "https://img.shields.io/badge/your-text-blue";
+            if (lt === "" && rt === "" && rc === "") {
+                out = "https://img.shields.io/badge/NOT_ALL_INPUTS-FILLED_UP-red";
+                view.src = out;
+            } else if (rt === "") {
+                out = "https://img.shields.io/badge/NOT_ALL_INPUTS-FILLED_UP-red";
+                view.src = out;
+            } else if (lt === "") {
+                out = "https://img.shields.io/badge/NOT_ALL_INPUTS-FILLED_UP-red";
+                view.src = out;
+            } else if (rc === "") {
+                out = "https://img.shields.io/badge/NOT_ALL_INPUTS-FILLED_UP-red";
                 view.src = out;
             }
             ot.innerText = out; // Changed from ot.value to ot.innerText
