@@ -51,22 +51,24 @@
     <hr class="void">
     <font id="ot">оютпут</font>
     <hr class="void">
-    <img src="https://img.shields.io/badges/your_text-here-red" alt="бэдгэ" id="view">
+    <img src="https://img.shields.io/badge/text-here-red" alt="бэдгэ" id="view">
     <script>
         function hi() {
-            let url = "https://img.shields.io/badges/";
+            let url = "https://img.shields.io/badge/";
             let view = document.getElementById("view");
             let lt = document.getElementById("lt").value;
             let rt = document.getElementById("rt").value;
             let rc = document.getElementById("rc").value;
             let ot = document.getElementById("ot");
             let out = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
-            if out == "https://img.shields.io/badges/--" {
-                out = "https://img.shields.io/badges/your-text-blue"
+            view.src = url + encodeURIComponent(lt) + "-" + encodeURIComponent(rt) + "-" + encodeURIComponent(rc);
+            if out == "https://img.shields.io/badge/--" {
+                out = "https://img.shields.io/badge/your-text-blue";
+                view.src = "https://img.shields.io/badge/your-text-blue";
             }
+            view.src = out;
             ot.innerText = out; // Changed from ot.value to ot.innerText
             console.log(out);
-            view.src = out
         }
     </script>
 </body>
