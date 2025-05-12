@@ -20,7 +20,6 @@ body {
   flex-direction: row;
   color: #F3F3F3;
   top: 0;
-  height: 30px;
   position: sticky;
   background: linear-gradient(#505050, #3F3F3F 45%, #242424 55%, #141414);
   z-index: 100;
