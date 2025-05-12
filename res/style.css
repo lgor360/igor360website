@@ -6,6 +6,7 @@ body {
 }
 
 .some-cool-div {
+  align-items: flex-start;
   text-align: center;
   display: flex;
   background: #E8E8E8;
