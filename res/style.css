@@ -25,7 +25,7 @@ body {
   color: #F3F3F3;
   top: 0;
   position: sticky;
-  background: linear-gradient(#3D3D3D, #595959 48%, #343434);
+  background: linear-gradient(#3D3D3D, #595959 63%, #343434);
   z-index: 100;
   width: 100%;
 }
