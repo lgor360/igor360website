@@ -40,8 +40,8 @@ body {
 }
 
 .topbar .logo {
+  margin: auto;
   left: 0;
-  width: 10px;
 }
 
 a {
