@@ -15,6 +15,7 @@ body {
 }
 
 .topbar {
+  text-align: center;
   flex-direction: row;
   color: #F3F3F3;
   top: 0;
