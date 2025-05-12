@@ -2,6 +2,9 @@ body {
   background-attachment: fixed;
   color: #000000;
   align-items: center;
+  width: 550px;
+  min-height: 100vh;
+  margin: 0 60px; 
 }
 
 .some-cool-div {
@@ -36,22 +39,4 @@ body {
 a {
   text-decoration: none;
   color: #FFFFFF;
-}
-
-@media (orientation: landscape) {
-  body {
-    width: 800px;
-    min-height: 100vh;
-    margin-left: 60px; 
-    margin-right: 60px; 
-  }
-}
-
-@media (orientation: portrait) {
-  body {
-    width: 450px;
-    min-height: 100vh;
-    margin-left: 30px; 
-    margin-right: 30px; 
-  }
 }
