@@ -31,11 +31,16 @@ body {
 }
 
 .topbar a {
+  vertical-align: center;
   margin: 0 6px; 
 }
 
 .topbar a.now {
   font-weight: bold;
+}
+
+.topbar .logo {
+  left: 0;
 }
 
 a {
