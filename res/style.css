@@ -2,7 +2,8 @@ body {
   background-attachment: fixed;
   color: #000000;
   margin: 0 20%; 
-  display: 800px;
+  width: 800px;
+  height: 100%;
 }
 
 .some-cool-div {
