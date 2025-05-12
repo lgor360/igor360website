@@ -1,12 +1,12 @@
 body {
-  text-align: center;
   background-attachment: fixed;
   color: #000000;
-  margin: 0 40px; 
+  margin: 0 20%; 
   display: 800px;
 }
 
 .some-cool-div {
+  text-align: center;
   display: flex;
   background: #EDE9D7;
   height: 100%;
