@@ -25,3 +25,8 @@ body {
   z-index: 100;
   width: 100%;
 }
+
+.topbar a {
+  margin: 0 10px;
+  color: #FFFFFF;
+}
