@@ -1,6 +1,7 @@
 body {
   background-attachment: fixed;
   color: #000000;
+  align-items: center;
 }
 
 .some-cool-div {
