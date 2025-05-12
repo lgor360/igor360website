@@ -52,8 +52,12 @@ a {
   width: 50px;
 }
 
+.seals {
+  align-items: center;
+}
+
 .seals img {
-  width: 160px;
+  width: 220px;
 }
 
 @media (orientation: landscape) {
