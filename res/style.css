@@ -45,7 +45,7 @@ a {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: portrait) {
   body {
     width: 450px;
   }
