@@ -1,8 +1,6 @@
 body {
   background-attachment: fixed;
   color: #000000;
-  margin: 0 20%; 
-  min-height: 100vh;
 }
 
 .some-cool-div {
@@ -42,11 +40,15 @@ a {
 @media (orientation: landscape) {
   body {
     width: 800px;
+    min-height: 100vh;
+    margin: 0 60px; 
   }
 }
 
 @media (orientation: portrait) {
   body {
     width: 450px;
+    min-height: 100vh;
+    margin: 0 30px; 
   }
 }
