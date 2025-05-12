@@ -16,7 +16,7 @@ body {
 
 .topbar {
   display: flex;
-  text-align: center;
+  justify-content: center;
   flex-direction: row;
   color: #F3F3F3;
   top: 0;
@@ -27,5 +27,6 @@ body {
 }
 
 .topbar a {
+  margin: 0 6px; 
   color: #FFFFFF;
 }
