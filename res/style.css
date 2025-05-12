@@ -52,6 +52,10 @@ a {
   width: 50px;
 }
 
+.seals img {
+  width: 60px;
+}
+
 @media (orientation: landscape) {
     body {
         width: 800px;
