@@ -1,4 +1,6 @@
 body {
+  flex-direction: column;
+  margin: auto;
   background-attachment: fixed;
   color: #000000;
   max-width: 800px;
