@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>okelote's website :3</title>
-    <link ref="stylesheet" href="/res/style.css">
+    <script>
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "/res/style.css?nocache=" + new Date().getTime();
+      document.head.appendChild(link);
+    </script>
   </head>
   <body>
     <div>updating the website...</div>
