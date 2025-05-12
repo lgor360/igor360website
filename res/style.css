@@ -2,7 +2,6 @@ body {
   background-attachment: fixed;
   color: #000000;
   margin: 0 20%; 
-  display: 800px;
   min-height: 100vh;
 }
 
@@ -38,4 +37,16 @@ body {
 a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+@media (orientation: landscape) {
+  body {
+    display: 800px;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    display: 450px;
+  }
 }
