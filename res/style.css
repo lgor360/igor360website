@@ -1,4 +1,6 @@
 body {
+  text-align: center;
   background-attachment: fixed;
   color: #F2F2F2;
+  margin: 0 40px; 
 }
