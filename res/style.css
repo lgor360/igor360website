@@ -3,6 +3,7 @@ body {
   color: #000000;
   margin: 0 20%; 
   display: 800px;
+  min-height: 100vh;
 }
 
 .some-cool-div {
