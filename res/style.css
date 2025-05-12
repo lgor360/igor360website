@@ -39,6 +39,10 @@ body {
   font-weight: bold;
 }
 
+.topbar .logo {
+  vertical-align: center;
+}
+
 a {
   text-decoration: none;
   color: #FFFFFF;
