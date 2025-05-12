@@ -7,7 +7,6 @@ body {
 
 .some-cool-div {
   text-align: center;
-  justify-content: center;
   display: flex;
   background: #E8E8E8;
   width: 100%;
