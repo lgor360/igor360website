@@ -14,10 +14,11 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .topbar {
+  flex-direction: row;
+  color: #F3F3F3;
   top: 0;
   position: sticky;
   background: linear-gradient(#505050, #3F3F3F 45%, #242424 55%, #141414);
