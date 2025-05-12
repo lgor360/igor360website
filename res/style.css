@@ -2,11 +2,11 @@ body {
   background-attachment: fixed;
   color: #000000;
   margin: 0 20%; 
-  padding-top: 10px;
   display: 800px;
 }
 
 .some-cool-div {
+  padding-top: 10px;
   flex-direction: column;
   align-items: center;
   display: flex;
