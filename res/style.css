@@ -41,12 +41,12 @@ a {
 
 @media (orientation: landscape) {
   body {
-    display: 800px;
+    width: 800px;
   }
 }
 
 @media (orientation: landscape) {
   body {
-    display: 450px;
+    width: 450px;
   }
 }
