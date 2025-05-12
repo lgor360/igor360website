@@ -6,8 +6,8 @@ body {
 }
 
 .some-cool-div {
+  flex-direction: column;
   align-items: center;
-  text-align: center;
   display: flex;
   background: #E8E8E8;
   width: 100%;
