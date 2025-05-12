@@ -48,6 +48,10 @@ a {
   color: #FFFFFF;
 }
 
+.slinks img {
+  width: 50px;
+}
+
 @media (orientation: landscape) {
     body {
         width: 800px;
