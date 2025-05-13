@@ -62,13 +62,15 @@ a {
 }
 
 @media (orientation: landscape) {
-    body {
-        width: 800px;
-    }
+  body {
+    font-size: 15px;
+    width: 800px;
+  }
 }
 
 @media (orientation: portrait) {
-    body {
-        width: 350px;
-    }
+  body {
+    font-size: 25px;
+    width: 500px;
+  }
 }
