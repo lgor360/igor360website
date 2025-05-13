@@ -10,6 +10,7 @@ body {
 }
 
 .some-cool-div {
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
   display: flex;
