@@ -13,16 +13,16 @@
       body {
         background-image: url(/igor360website/res/backgrounds/backFOUR.png?new);
       }
+
+      .sealpage {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <div class="some-cool-div">
       <div class="topbar">
-        <a href="/igor360website/home.html">homepage</a>
-        <a href="/igor360website/seal.html" class="now">seals</a>
-        <a href="/igor360website/cat.html">cats</a>
-        <a href="/igor360website/games.html">games</a>
-        <a href="/igor360website/contact.html">contact</a>
+        <!-- navbar.html -->
       </div>
       <div>seals</div>
       <div class="seals">
@@ -42,5 +42,12 @@
       <source type="audio/mpeg" src="/igor360website/music/mp3/miieditorwiiu.mp3">
       <source type="audio/ogg" src="/igor360website/music/ogg/miieditorwiiu.ogg">
     </audio>
+    <script>
+      fetch('/igor360website/navbar.html?no=' + new Date().getTime())
+        .then(response => response.text())
+        .then(html => {
+          document.querySelector('.some-cool-div .topbar').innerHTML = html;
+        });
+    </script>
   </body>
 </html>
