@@ -52,7 +52,7 @@
       <source type="audio/ogg" src="/igor360website/music/ogg/ambience.ogg">
     </audio>
     <script>
-      fetch('/igor360website/navbar.html')
+      fetch('/igor360website/navbar.html?no=' + new Date().getTime())
         .then(response => response.text())
         .then(html => {
           document.querySelector('.some-cool-div .topbar').innerHTML = html;
