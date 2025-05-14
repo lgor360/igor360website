@@ -63,8 +63,8 @@ a {
     width: 50px;
   }
   
-  .buttonIMG {
-    width: 110px;
+  .DOWNLOAD {
+    width: 190px;
   }
 }
 
@@ -80,5 +80,9 @@ a {
   
   .buttonIMG {
     width: 160px;
+  }
+  
+  .DOWNLOAD {
+    width: 250px;
   }
 }
