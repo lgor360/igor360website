@@ -26,7 +26,21 @@
         <!-- navbar.html -->
       </div>
       <div>fun(⁠≧⁠▽⁠≦⁠)</div>
+      <div style="background-color: #4F4F4F; color: #FFFFFF; width: 200px; height: 140px;" class="bredF">
+        random bread
+        <img class="bred" style="width: 100px; height: 100px;" src="/igor360website/res/images/bread/bread1.png" alt="bread">
+        <button onclick="rBred()">random bread</button>
+      </div>
     </div>
+    <script>
+      let min = 1;
+      let max = 4;
+
+      function rBred() {
+        let random = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.querySelector('.some-cool-div .bredF .bred').src = `/igor360website/res/images/bread/bread${random}.png`;
+      }
+    </script>
     <script>
       fetch('/igor360website/navbar.html?no=' + new Date().getTime())
         .then(response => response.text())
