@@ -31,6 +31,10 @@
         <img class="bred" style="width: 100px; height: 100px;" src="/igor360website/res/images/bread/bread1.png" alt="bread">
         <button onclick="rBred()">random bread</button>
       </div>
+      <div style="background-color: #363636; padding: 16px 16px;">
+        seal question
+        <button onclick="confo()">start</button>
+      </div>
     </div>
     <audio autoplay loop preload="auto">
       <source type="audio/mpeg" src="/igor360website/music/mp3/photochannelpuzzle.mp3">
@@ -43,6 +47,15 @@
       function rBred() {
         let random = Math.floor(Math.random() * (max - min + 1)) + min;
         document.querySelector('.some-cool-div .bredF .bred').src = `/igor360website/res/images/bread/bread${random}.png`;
+      }
+      
+      function confo() {
+        const confor = confirm("u like seals?");
+        if (confor) {
+          alert("u like!!!");
+        } else {
+          alert("u dont like.");
+        }
       }
     </script>
     <script>
