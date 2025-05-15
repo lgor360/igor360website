@@ -39,22 +39,11 @@
         </div>
       </div>
       <a target="_blank" href="https://github.com/lgor360/catgameGTK/releases"><img class="DOWNLOAD" src="/igor360website/res/images/dfgh.png" alt="download button"></a>
-      <button onclick="confo()">seals question</button>
     </div>
     <audio autoplay loop preload="auto">
       <source type="audio/mpeg" src="/igor360website/music/mp3/maxwell.mp3">
       <source type="audio/ogg" src="/igor360website/music/ogg/maxwell.ogg">
     </audio>
-    <script>
-      function confo() {
-        const confor = confirm("u like seals?");
-        if (confor) {
-          alert("u like!!!");
-        } else {
-          alert("u dont like.");
-        }
-      }
-    </script>
     <script>
       fetch('/igor360website/navbar.html?no=' + new Date().getTime())
         .then(response => response.text())
