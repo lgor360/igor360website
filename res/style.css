@@ -15,9 +15,9 @@ button {
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
-  padding: 5px 2px;
+  padding: 2px 5px;
   border-radius: 3px;
-  border-color: #b3b3b3;
+  border-color: #d4d4d4;
 }
 
 .some-cool-div {
