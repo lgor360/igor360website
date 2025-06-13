@@ -9,6 +9,14 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+button {
+  background: linear-gradient(#3D3D3D, #595959 63%, #343434);
+  color: #ffffff;
+  border: 3px solid #1e1e1e;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
 .some-cool-div {
   min-height: 100vh;
   flex-direction: column;
