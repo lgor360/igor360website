@@ -11,7 +11,7 @@ body {
 
 input::placeholder {
   font-style: italic;
-  color: #363636;
+  color: #c5c5c5;
 }
 
 input, button {
